@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🌈 RAINBOW PREMIUM DESIGN SYSTEM */
+:root {
+  --bg: #0b0f1a;
+
+  --pink: #ff4ecd;
+  --purple: #8b5cf6;
+  --blue: #3b82f6;
+  --cyan: #22d3ee;
+  --green: #22c55e;
+  --yellow: #facc15;
+  --orange: #fb923c;
+  --red: #ef4444;
+
+  --card: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.12);
+}
+
+/* 🌌 DARK RAINBOW BACKGROUND */
+body {
+  background: radial-gradient(circle at top, #1a0b2e, #0b0f1a, #05060a);
+  color: white;
+  font-family: ui-sans-serif, system-ui;
+}
+
+/* 💎 GLASS RAINBOW CARD */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(14px);
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(255, 78, 205, 0.15);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow:
+    0 0 20px rgba(139, 92, 246, 0.4),
+    0 0 40px rgba(34, 211, 238, 0.2);
+}
+
+/* 🔥 RAINBOW BUTTON */
+.btn-rainbow {
+  background: linear-gradient(
+    135deg,
+    #ff4ecd,
+    #8b5cf6,
+    #3b82f6,
+    #22d3ee
+  );
+  color: white;
+  padding: 10px 16px;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.4);
+}
+
+.btn-rainbow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(255, 78, 205, 0.6);
+}
+
+/* 🌈 TEXT GRADIENT TITLE */
+.text-rainbow {
+  background: linear-gradient(
+    90deg,
+    #ff4ecd,
+    #8b5cf6,
+    #3b82f6,
+    #22d3ee,
+    #22c55e
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🟢 BADGES */
+.badge-green {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.badge-yellow {
+  background: rgba(250, 204, 21, 0.15);
+  color: #facc15;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+.badge-red {
+  background: rgba(239, 68, 68, 0.15);
+  color: #ef4444;
+  padding: 5px 10px;
+  border-radius: 999px;
+}
+
+/* ✨ INPUT */
+input {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.3);
+}
